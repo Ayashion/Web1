@@ -1,0 +1,283 @@
+
+#home {
+    width: calc(100% - 200px);
+    background-color: var(--color-background-white);
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+#home .menu a {
+    color: #333;
+    font-size: medium;
+}
+#home .topBanner  {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+#home .banner-item{
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+#home #item1{
+    margin: 30px 15px 30px 30px;
+}
+#home #item2{
+    margin: 30px 15px 30px 15px;
+}
+#home #item3{
+    margin: 30px 30px 30px 15px;
+}
+.banner-item img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+#home .tieuDeMucSP{
+    font-weight: 600;
+    font-size: larger;
+}
+#home .sanPhamMoi{
+    display: flex;
+    justify-content: space-between;
+}
+#home .menu{
+    margin-top: 2px;
+    
+}
+#home .item-menu{
+    display: inline-block;
+    cursor: pointer;
+    margin:  0 10px 0 10px;
+}
+/* #home .sanPhamMoi li{
+    display: inline-block;
+}
+#home .sanPhamMoi ul{
+    float: right;
+}
+#home .sanPhamMoi li{
+    margin: 8px;
+} */
+#home .container-SanPhamMoi{
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+    overflow: hidden;
+    
+    margin-top: 20px;
+    /* padding-left:5%; */
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.btn-left {
+    z-index: 10;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    border-radius: 50%;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.btn-right {
+    z-index: 10;
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    border-radius: 50%;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.container-wrap {
+    width: 160vw;
+    transition: 0.8s ease;
+}
+
+#home .container-SanPhamMoi .item-SanPhamMoi img {
+    cursor: pointer;
+}
+
+
+#home .container-SanPhamMoi .item-SanPhamMoi{
+    line-height: 1;
+    margin: 5px 15px;
+    width: 14.8vw;
+    display: inline-block;
+    background-color: var(--color-background-white);
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+#home .container-SanPhamMoi .item-SanPhamMoi > *{
+    padding-block: 5px;
+    display: block;
+}
+
+#home .prd-title {
+    border : 0; 
+    background-color: transparent;
+    margin-inline: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#home .prd-price {
+    font-size: 20px;
+    font-weight: 1000;
+    color: var(--color-primary-dark);
+}
+
+
+#home .container-SanPhamMoi .item-SanPhamMoi:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+}
+
+#home .container-SanPhamMoi .item-SanPhamMoi img{
+    width: 100%;
+    max-height: 100%;
+}
+#home .item-size-color{
+    display: flex!important;
+    justify-content: space-between ;
+    margin: 5px 0px 5px 0px ;
+}
+#home .font-product{
+    font-size: small;
+}
+
+#home .item-SanPhamMoi__footer {
+    min-height: 52px;
+    position: relative;
+}
+
+#home .item-SanPhamMoi__btn {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    bottom: 25%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    width: 60%;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-align: center;
+    line-height: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+#home .item-SanPhamMoi:hover .item-SanPhamMoi__footer .item-SanPhamMoi__btn {
+    display: block;
+}
+
+#home a{
+    text-decoration: none;
+    color: #333;
+}
+/* #home .product-box-title{
+    line-height: 1;
+} */
+#home .price-product{     
+    margin-top: 5px;
+}
+
+#home .price-product span {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+.bannerMid img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#home .item-menu1 {
+    position: relative;
+    padding-bottom: 5px;
+}
+#home .item-menu1::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--color-gradient);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+#home .item-menu1:hover::after{
+    width: 100%;
+    transform: translateX(100%);
+}
+
+#home .btn-ul{
+    display: flex;
+    list-style: none;
+}
+
+#home .btn-li{
+    margin: 2px 4px;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #c9bfbf;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#home .gagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#home .btn--active{
+    background-color: rgb(110, 146, 129);
+
+}
+#home .btn1--active{
+    background-color: rgb(110, 146, 129);
+
+}
+.showcart-wrap {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.showcart {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+}
+.showcart-wrap--active{
+    display: flex;
+}
+
+.cartAdded {
+    background-color: #f50057 !important;
+    border-color: #f50057 !important;
+    cursor: not-allowed !important;
+}
